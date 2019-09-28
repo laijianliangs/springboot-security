@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity4"><head>
+    <meta charset="UTF-8">
+    <title>安全中心</title>
+</head>
+<body>
+<form th:action="@{/logout}" method="post">
+
+    <input type="submit" value="注销">
+</form>
+
+<div >
+    <a th:href="@{emp}" th:text="普通员工"  ></a>
+</div>
+<div>
+     <a th:href="@{monitor}">主管</a>
+</div>
+<div>
+     <a th:href="@{boss}">经理</a>
+</div>
+</body>
+</html>
